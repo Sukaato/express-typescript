@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/src/app.ts",
+            "preLaunchTask": {
+                "type": "typescript",
+                "tsconfig": "tsconfig.json",
+                "option": "watch",
+                "problemMatcher": [
+                    "$tsc-watch"
+                ],
+                "group": "build"
+            },
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "runtimeExecutable": "nodemon",
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}
